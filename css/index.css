@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+body {
+  background-color: #000f2d;
+  height: 100vh;
+  overflow: auto;
+}
+h3 {
+  background: linear-gradient(to right, #2b91f9, #18498a, #0a1c43);
+  line-height: 1.4rem;
+  height: 1.4rem;
+  font-size: 0.8rem;
+  color: #fff;
+  text-align: left;
+  font-weight: 400;
+  padding-left: 0.2rem;
+  margin-top: 0.8rem;
+  margin-left: 0.4rem;
+}
+a {
+  text-decoration: none;
+  color: #95c3e2;
+  border: 1px solid #95c3e2;
+  padding: 0.1rem;
+  border-radius: 15%;
+  font-size: 0.1rem;
+  line-height: 1rem;
+  margin-right: 0.8rem;
+  display: block;
+  float: right;
+}
+.mainbox {
+  display: flex;
+  min-width: 1024px;
+  max-width: 1920px;
+  margin: 0 auto;
+  height: 100%;
+}
+.mainbox .column {
+  flex: 5;
+  color: #fff;
+  padding: 1.5rem;
+  height: 100%;
+}
+.mainbox .column:nth-child(2) {
+  flex: 3;
+  padding-bottom: 0;
+}
+.mainbox .column:last-child {
+  flex: 6;
+}
+.mainbox .panel {
+  position: relative;
+  border: 1px solid rgba(33, 53, 94, 0.8);
+}
+.mainbox .panel::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-left: 2px solid #4774b4;
+  border-top: 2px solid #4774b4;
+  content: "";
+}
+.mainbox .panel::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #4774b4;
+  border-right: 2px solid #4774b4;
+  content: "";
+}
+.mainbox .panel .tips {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.mainbox .panel .tips .box {
+  flex: 30%;
+  height: 3rem;
+  position: relative;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#0032a3), to(#2d8cf8));
+  margin: 0.4rem;
+  border-radius: 0.4rem;
+  font-size: 0.8rem;
+}
+.mainbox .panel .tips .box p {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.mainbox .panel .tips .box h4 {
+  font-size: 1.35rem;
+  position: absolute;
+  right: 15%;
+  bottom: 0%;
+  font-weight: 600;
+}
+.mainbox .panel .tips .box span {
+  position: absolute;
+  right: 4%;
+  bottom: 5%;
+}
+.mainbox .panel .map {
+  height: 24.6rem;
+}
+.mainbox .panel .panel-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.mainbox .panel .panel-footer::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-left: 2px solid #4774b4;
+  border-bottom: 2px solid #4774b4;
+  content: "";
+}
+.mainbox .panel .panel-footer::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #4774b4;
+  border-right: 2px solid #4774b4;
+  content: "";
+}
+.mainbox .left {
+  height: 49.5rem;
+  position: relative;
+}
+.mainbox .left h3 {
+  text-align: center;
+  padding: 0;
+  background: linear-gradient(to right, #081d48, #2784ed, #0a1c43);
+}
+.mainbox .left .line {
+  width: 100%;
+  height: 13rem;
+  position: absolute;
+  top: 72%;
+}
+.mainbox .bar {
+  height: 24rem;
+  padding: 0.6rem;
+  margin-bottom: 2.8rem;
+}
+.mainbox .bar .chart {
+  height: 24rem;
+}
+.mainbox .pie {
+  height: 21.3rem;
+}
+.mainbox .pie .bing1 {
+  height: 100%;
+}
+.mainbox .right {
+  height: 10.5rem;
+  margin-bottom: 2.6rem;
+}
+.mainbox .right .right1,
+.mainbox .right .right2 {
+  height: 100%;
+}
+.mainbox .kuan {
+  width: 14rem;
+  height: 23rem;
+  margin: 0;
+  position: relative;
+}
+.mainbox .kuan .right3 {
+  height: 100%;
+}
+.mainbox .kuan .last {
+  width: 21rem;
+  height: 18rem;
+  position: absolute;
+  right: -165%;
+  top: 0%;
+}
+.mainbox .kuan .last h3 {
+  text-align: center;
+  padding: 0;
+  background: linear-gradient(to right, #081d48, #2784ed, #0a1c43);
+}
+.mainbox .kuan .last .font {
+  height: 100%;
+}
+.mainbox .kuan .circle-ripple {
+  background-color: #001027;
+  width: 80%;
+  font-size: 0.8rem;
+  border-radius: 10%;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ripple 1s linear infinite;
+}
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(76, 85, 102, 0.3), 0 0 0 1em rgba(55, 60, 70, 0.3), 0 0 0 3em rgba(63, 121, 223, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 1em rgba(27, 58, 112, 0.3), 0 0 0 3em rgba(57, 83, 128, 0.3), 0 0 0 5em rgba(35, 88, 179, 0);
+  }
+}
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 42px !important;
+  }
+}
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 80px !important;
+  }
+}

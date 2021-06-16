@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <title>echarts_demo</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <!-- 页面主体部分 -->
+    <div class="mainbox">
+      <div class="column">
+        <div class="panel left">
+          <div class="tips">
+            <div class="box">
+              <p>微群总数</p>
+              <h4>6667</h4>
+              <span>个</span>
+            </div>
+            <div class="box">
+              <p>入群总数</p>
+              <h4>1047874</h4>
+              <span>个</span>
+            </div>
+            <div class="box">
+              <p>工单数量</p>
+              <h4>14795</h4>
+              <span>个</span>
+            </div>
+            <div class="box">
+              <p>覆盖村房</p>
+              <h4>1835</h4>
+              <span>个</span>
+            </div>
+            <div class="box">
+              <p>覆盖乡镇</p>
+              <h4>145</h4>
+              <span>个</span>
+            </div>
+            <div class="box">
+              <p>覆盖区县</p>
+              <h4>11</h4>
+              <span>个</span>
+            </div>
+          </div>
+          <div class="map"></div>
+          <h3>近期每周用户活跃走势</h3>
+            <div class="line"></div>
+          <div class="panel-footer"></div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="panel bar">
+          <h3>各辖区工单总数</h3>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel pie">
+          <h3>
+            近30日工单处理情况
+            <a href="javascript:;">查看详情</a>
+          </h3>
+          <div class="bing1"></div>
+          <div class="panel-footer"></div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="panel right">
+          <h3>
+            各级处理工单数据
+            <a href="javascript:;">查看详情</a>
+          </h3>
+          <div class="right1"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel right">
+          <h3>每周新增工单数走势</h3>
+          <div class="right2"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel right kuan">
+          <h3>前10关键词排名</h3>
+          <div class="right3"></div>
+          <div class="last">
+            <h3>
+              关键字云图
+              <a href="javascript:;">查看详情</a>
+            </h3>
+            <div class="font circle-ripple"></div>
+          </div>
+          <div class="panel-footer"></div>
+        </div>
+      </div>
+    </div>
+    <script src="js/echarts.min.js"></script>
+    <!-- <script src="js/map.json"></script> -->
+    <script src="js/jquery.js"></script>
+    <script src="js/worldcloud.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
