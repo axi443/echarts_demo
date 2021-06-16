@@ -306,7 +306,7 @@
       icon: "circle",
       // 修改图例组件的文字为 12px
       textStyle: {
-        color: "#fff",
+        color: ["#0085EA", "#EE6346", "#FFAC35"],
         fontSize: "12",
       },
     },
